@@ -107,7 +107,9 @@ def runer(f):
     wite = np.ones_like(im) * 255
     cropped = np.where(result == 0, wite, mask)
     # show_pic(cropped)
-    cv2.imwrite(os.path.join(result_path, f), cropped[:h, :w])
+    savePath = os.path.join(result_path, f)
+    print(f"save path:{savePath}")
+    cv2.imwrite(savePath, cropped[:h, :w])
     return cropped[:h, :w]
 
 
