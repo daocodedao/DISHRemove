@@ -16,6 +16,10 @@ pip install -r requirements.txt
 scp -r  -P 10067 ./isnet.pth fxbox@frp.fxait.com:/data/work/DISHRemove/ 
 ```
 
+## 训练数据集
+https://huggingface.co/datasets/Inoob/HandwritingSegmentationDataset
+![](./images/WX20250625-123150.png)
+
 ## 运行后拷贝
 scp -r  -P 10067  fxbox@frp.fxait.com:/data/work/DISHRemove/images/result/  /Users/linzhiji/Downloads
 
