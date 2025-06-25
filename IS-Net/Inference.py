@@ -112,9 +112,9 @@ def runer(f):
 
 
 if __name__ == "__main__":
-    dataset_path = "./val/im"  # Your dataset path
+    dataset_path = "./images/src"  # Your dataset path
     model_path = "./isnet.pth"  # the model path
-    result_path = "./res"  # The folder path that you want to save the results
+    result_path = "./images/result"  # The folder path that you want to save the results
 
     net = ISNetDIS()
 
