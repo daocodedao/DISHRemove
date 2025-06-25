@@ -7,7 +7,25 @@ source venv/bin/activate
 
 pip install -r requirements.txt 
 
-scp -r  -P 10067 ./isnet.pth fxbox@frp.fxait.com:/data/work/DISHRemove/ 
-scp -r  -P 10067 val/ fxbox@frp.fxait.com:/data/work/DISHRemove/ 
-
 ```
+
+## 模型
+```
+# 下载 https://huggingface.co/Inoob/DIS-Handwriting-Remover/tree/main/isnet.pth 到本地
+
+scp -r  -P 10067 ./isnet.pth fxbox@frp.fxait.com:/data/work/DISHRemove/ 
+```
+
+## 运行后拷贝
+scp -r  -P 10067  fxbox@frp.fxait.com:/data/work/DISHRemove/images/result/  /Users/linzhiji/Downloads
+
+
+
+# 说明
+原项目  https://huggingface.co/Inoob/DIS-Handwriting-Remover
+
+## 效果
+效果不行！！！！
+![](./images/WX20250625-122712.png)
+
+
