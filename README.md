@@ -14,6 +14,7 @@ pip install -r requirements.txt
 # 下载 https://huggingface.co/Inoob/DIS-Handwriting-Remover/tree/main/isnet.pth 到本地
 
 scp -r  -P 10067 ./isnet.pth fxbox@frp.fxait.com:/data/work/DISHRemove/ 
+scp -r  -P 10067 ./isnet5.pth fxbox@frp.fxait.com:/data/work/DISHRemove/ 
 ```
 
 ## 训练数据集
