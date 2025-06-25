@@ -52,6 +52,7 @@ def runer(f):
     im = temp
     im_shp = im.shape[0:2]
     im_tensor = torch.tensor(im, dtype=torch.float32).permute(2, 0, 1)
+    input_size=(1024,1024)
     im_tensor = F.upsample(
         torch.unsqueeze(im_tensor, 0), input_size, mode="bilinear"
     ).type(torch.uint8)

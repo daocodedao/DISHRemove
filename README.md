@@ -8,6 +8,6 @@ source venv/bin/activate
 pip install -r requirements.txt 
 
 scp -r  -P 10067 ./isnet.pth fxbox@frp.fxait.com:/data/work/DISHRemove/ 
-
+scp -r  -P 10067 val/ fxbox@frp.fxait.com:/data/work/DISHRemove/ 
 
 ```
